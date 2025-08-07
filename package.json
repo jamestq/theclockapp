@@ -1,0 +1,16 @@
+{
+  "name": "theclock",
+  "version": "1.0.0",
+  "description": "A timezone converter clock app",
+  "main": "index.html",
+  "homepage": "https://yourusername.github.io/theclock",
+  "scripts": {
+    "start": "python -m http.server 3000 2>/dev/null ||(echo 'Python not found. Please open index.html in your browser manually.' && exit 1)",
+    "dev": "npm start",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "echo 'Deploy via GitHub Actions'"
+  },
+  "keywords": ["clock", "timezone", "converter"],
+  "author": "",
+  "license": "MIT"
+}

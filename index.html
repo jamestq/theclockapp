@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Clock - Time Zone Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Clock</h1>
+        
+        <div class="clocks">
+            <div class="clock-section">
+                <h2>Your Local Time</h2>
+                <div class="clock" id="local-clock">
+                    <div class="time" id="local-time">--:--:--</div>
+                    <div class="date" id="local-date">---</div>
+                    <div class="timezone" id="local-timezone">---</div>
+                </div>
+            </div>
+            
+            <div class="clock-section">
+                <h2 id="shared-title">Shared Time</h2>
+                <div class="clock" id="shared-clock">
+                    <div class="time" id="shared-time">--:--:--</div>
+                    <div class="date" id="shared-date">---</div>
+                    <div class="timezone" id="shared-timezone">---</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="share-btn" class="share-button">Share Your Time</button>
+            <div id="share-link" class="share-link" style="display: none;">
+                <input type="text" id="share-url" readonly>
+                <button id="copy-btn">Copy</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
